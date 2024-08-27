@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- A meta tag viewport garante que a página seja renderizada corretamente em diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <style>
+        /* Definição de estilos básicos para o corpo da página */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte padrão */
+            margin: 0; /* Remove margens padrão do navegador */
+            padding: 0; /* Remove padding padrão do navegador */
+        }
+
+        /* Estilo para o container principal */
+        .container {
+            width: 100%; /* Ocupa 100% da largura da tela */
+            padding: 10px; /* Adiciona um espaçamento interno */
+            box-sizing: border-box; /* Inclui padding e bordas na largura e altura total do elemento */
+        }
+
+        /* Estilo para o cabeçalho do site */
+        .header {
+            background-color: #4CAF50; /* Cor de fundo verde */
+            color: white; /* Texto branco */
+            padding: 15px; /* Espaçamento interno */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        /* Estilo para organizar as colunas em uma linha */
+        .row {
+            display: flex; /* Usa flexbox para alinhar os itens em linha */
+            flex-wrap: wrap; /* Permite que as colunas "quebrem" para a linha abaixo em telas menores */
+        }
+
+        /* Estilo para as colunas */
+        .col {
+            flex: 50%; /* Cada coluna ocupa 50% da largura da linha */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        /* Media query para telas pequenas (menos de 600px de largura) */
+        @media only screen and (max-width: 600px) {
+            .col {
+                flex: 100%; /* Em telas pequenas, as colunas ocupam 100% da largura, empilhando-se verticalmente */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <div class="header">
+        <h1>Meu Site Responsivo</h1>
+    </div>
+
+    <!-- Container principal que contém as colunas -->
+    <div class="container">
+        <div class="row">
+            <!-- Coluna 1 -->
+            <div class="col" style="background-color: #f1f1f1;">
+                <p>Coluna 1</p>
+            </div>
+            <!-- Coluna 2 -->
+            <div class="col" style="background-color: #e2e2e2;">
+                <p>Coluna 2</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
